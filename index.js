@@ -16,7 +16,6 @@ const translate = new Translate({
 
 
 client.on('ready', () => {
-    client.listen(process.env.PORT || 5000);
     console.log(`Translater is in the builllllding!`);
   });
 
