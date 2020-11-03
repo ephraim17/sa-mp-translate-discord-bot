@@ -82,7 +82,7 @@ client.on('ready', () => {
                                 
                                 var latin_russian_chat = convert(cyrillic_russian_chat);
                                 
-                                client.channels.cache.get(english_echo).send('!s' + latin_russian_chat);      
+                                //client.channels.cache.get(english_echo).send('!s' + latin_russian_chat);      
                             })
 
                             .catch((err) => {   
