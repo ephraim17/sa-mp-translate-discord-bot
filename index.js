@@ -102,5 +102,5 @@ client.on('ready', () => {
             } 
         });
 
-
+        app.listen(process.env.PORT , () => console.log('Server started on ' + process.env.PORT ))
         client.login(process.env.BOT_TOKEN);
