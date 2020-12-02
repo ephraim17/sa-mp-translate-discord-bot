@@ -26,7 +26,7 @@ client.on('ready', () => {
         console.log('content ' + msg.content);
         console.log('This person sent this msg ' + msg.author);
 
-        const data = {
+            data = {
             playerid: '4',
             message: msg.content
         };
@@ -48,7 +48,7 @@ client.on('ready', () => {
         console.log('content ' + msg.content);
         console.log('This person sent this msg ' + msg.author);
 
-        const data = {
+            data = {
             playerid: '4',
             message: msg.content
         };
@@ -71,7 +71,7 @@ client.on('ready', () => {
         console.log('content ' + msg.content);
         console.log('This person sent this msg ' + msg.author);  
         
-        const data = {
+            data = {
             playerid: '4',
             message: msg.content
         };
