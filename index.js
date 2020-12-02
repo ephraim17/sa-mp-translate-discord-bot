@@ -35,7 +35,7 @@ client.on('ready', () => {
             .then((res) => {
                 console.log(`Status: ${res.status}`);
                 console.log('Body: ', res.data);
-                msg.channel.send('HI');
+                // msg.channel.send('HI');
             }).catch((err) => {
                 console.error(err);
             });
@@ -57,7 +57,7 @@ client.on('ready', () => {
             .then((res) => {
                 console.log(`Status: ${res.status}`);
                 console.log('Body: ', res.data);
-                msg.channel.send('HI');
+                // msg.channel.send('HI');
             }).catch((err) => {
                 console.error(err);
             });
@@ -65,7 +65,7 @@ client.on('ready', () => {
         
     };
 
-    if (msg.channel.id == lang_to_spanish){
+    if (msg.channel.id == lang_to_spanish && msg.author != ''){
 
         console.log('Soemones trying to translate text to Spanish');
         console.log('content ' + msg.content);
@@ -80,7 +80,7 @@ client.on('ready', () => {
             .then((res) => {
                 console.log(`Status: ${res.status}`);
                 console.log('Body: ', res.data);
-                msg.channel.send('HI');
+                // msg.channel.send('HI');
             }).catch((err) => {
                 console.error(err);
             });
