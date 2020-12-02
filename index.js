@@ -5,6 +5,9 @@ const express = require('express')
 const app = express()
 const axios = require('axios');
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+
 client.on('ready', () => {
     console.log(`Translater is in the builllllding!`);
   });
@@ -36,9 +39,6 @@ client.on('ready', () => {
             }).catch((err) => {
                 console.error(err);
             });
-
-
-          msg.channel.send(embed);
     
     };
 
@@ -85,9 +85,8 @@ client.on('ready', () => {
                 console.error(err);
             });
     }; 
-    
-
-        });
-        client.login(process.env.BOT_TOKEN);
-
-        app.listen(process.env.PORT , () => console.log('Server started on ' + process.env.PORT ))
+            
+});
+        
+client.login(process.env.BOT_TOKEN);
+app.listen(process.env.PORT , () => console.log('Server started on ' + process.env.PORT ))
