@@ -5,11 +5,6 @@ const express = require('express')
 const app = express()
 const axios = require('axios');
 
-
- 
-
-
-
 client.on('ready', () => {
     console.log(`Translater is in the builllllding!`);
   });
@@ -40,6 +35,16 @@ client.on('ready', () => {
             }).catch((err) => {
                 console.error(err);
             });
+
+            const embed = new MessageEmbed()
+            // Set the title of the field
+            .setTitle('POST https://samp-translate.herokuapp.com/lang-to-english')
+            // Set the color of the embed
+            .setColor(0xff0000)
+            // Set the main content of the embed
+            .setDescription(res.data);
+          // Send the embed to the same channel as the message
+          msg.channel.send(embed);
     
     };
 
@@ -61,6 +66,16 @@ client.on('ready', () => {
             }).catch((err) => {
                 console.error(err);
             });
+
+            const embed = new MessageEmbed()
+            // Set the title of the field
+            .setTitle('POST https://samp-translate.herokuapp.com/lang-to-english')
+            // Set the color of the embed
+            .setColor(0xff0000)
+            // Set the main content of the embed
+            .setDescription(res.data);
+          // Send the embed to the same channel as the message
+          msg.channel.send(embed);
         
     };
 
@@ -82,6 +97,16 @@ client.on('ready', () => {
             }).catch((err) => {
                 console.error(err);
             });
+
+            const embed = new MessageEmbed()
+            // Set the title of the field
+            .setTitle('POST https://samp-translate.herokuapp.com/lang-to-english')
+            // Set the color of the embed
+            .setColor(0xff0000)
+            // Set the main content of the embed
+            .setDescription(res.data);
+          // Send the embed to the same channel as the message
+          msg.channel.send(embed);
     }; 
     
 
