@@ -20,7 +20,7 @@ client.on('ready', () => {
 
   client.on('message', msg => {
 
-    if (msg.channel.id == lang_to_english){
+    if (msg.channel.id == lang_to_english && msg.author != '769186526688313405'){
 
         console.log('Soemones trying to translate text to English');
         console.log('content ' + msg.content);
@@ -35,14 +35,14 @@ client.on('ready', () => {
             .then((res) => {
                 console.log(`Status: ${res.status}`);
                 console.log('Body: ', res.data);
-                // msg.channel.send('HI');
+                msg.channel.send('HI');
             }).catch((err) => {
                 console.error(err);
             });
     
     };
 
-    if (msg.channel.id == lang_to_russian){
+    if (msg.channel.id == lang_to_russian && msg.author != '769186526688313405'){
 
         console.log('Soemones trying to translate text to Russian');
         console.log('content ' + msg.content);
@@ -57,7 +57,7 @@ client.on('ready', () => {
             .then((res) => {
                 console.log(`Status: ${res.status}`);
                 console.log('Body: ', res.data);
-                // msg.channel.send('HI');
+                msg.channel.send('HI');
             }).catch((err) => {
                 console.error(err);
             });
@@ -65,7 +65,7 @@ client.on('ready', () => {
         
     };
 
-    if (msg.channel.id == lang_to_spanish && msg.author != ''){
+    if (msg.channel.id == lang_to_spanish && msg.author != '769186526688313405'){
 
         console.log('Soemones trying to translate text to Spanish');
         console.log('content ' + msg.content);
@@ -80,7 +80,7 @@ client.on('ready', () => {
             .then((res) => {
                 console.log(`Status: ${res.status}`);
                 console.log('Body: ', res.data);
-                // msg.channel.send('HI');
+                msg.channel.send('HI');
             }).catch((err) => {
                 console.error(err);
             });
