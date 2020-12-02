@@ -73,8 +73,8 @@ client.on('ready', () => {
         console.log('This person sent this msg ' + msg.author);  
         
             data = {
-            playerid: '4',
-            message: msg.content
+            "playerid": '4',
+            "message": msg.content
         };
         
         axios.post('https://samp-translate.herokuapp.com/lang-to-spanish', data)
