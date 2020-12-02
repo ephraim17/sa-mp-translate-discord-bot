@@ -35,7 +35,7 @@ client.on('ready', () => {
             .then((res) => {
                 console.log(`Status: ${res.status}`);
                 console.log('Body: ', res.data);
-                msg.channel.send(res.data);
+                msg.channel.send('HI');
             }).catch((err) => {
                 console.error(err);
             });
@@ -57,7 +57,7 @@ client.on('ready', () => {
             .then((res) => {
                 console.log(`Status: ${res.status}`);
                 console.log('Body: ', res.data);
-                msg.channel.send(res.data);
+                msg.channel.send('HI');
             }).catch((err) => {
                 console.error(err);
             });
@@ -80,7 +80,7 @@ client.on('ready', () => {
             .then((res) => {
                 console.log(`Status: ${res.status}`);
                 console.log('Body: ', res.data);
-                msg.channel.send(res.data);
+                msg.channel.send('HI');
             }).catch((err) => {
                 console.error(err);
             });
