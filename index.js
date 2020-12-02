@@ -3,6 +3,9 @@ const client = new Discord.Client();
 require('dotenv').config();
 const express = require('express')
 const app = express()
+const axios = require('axios');
+
+
  
 
 
@@ -24,6 +27,19 @@ client.on('ready', () => {
         console.log('Soemones trying to translate text to English');
         console.log('content ' + msg.content);
         console.log('This person sent this msg ' + msg.author);
+
+        const data = {
+            playerid: '4',
+            message: msg.content
+        };
+        
+        axios.post('https://samp-translate.herokuapp.com/lang-to-english', data)
+            .then((res) => {
+                console.log(`Status: ${res.status}`);
+                console.log('Body: ', res.data);
+            }).catch((err) => {
+                console.error(err);
+            });
     
     };
 
@@ -33,13 +49,39 @@ client.on('ready', () => {
         console.log('content ' + msg.content);
         console.log('This person sent this msg ' + msg.author);
 
+        const data = {
+            playerid: '4',
+            message: msg.content
+        };
+        
+        axios.post('https://samp-translate.herokuapp.com/lang-to-russian', data)
+            .then((res) => {
+                console.log(`Status: ${res.status}`);
+                console.log('Body: ', res.data);
+            }).catch((err) => {
+                console.error(err);
+            });
+        
     };
 
     if (msg.channel.id == lang_to_spanish){
 
         console.log('Soemones trying to translate text to Spanish');
         console.log('content ' + msg.content);
-        console.log('This person sent this msg ' + msg.author);     
+        console.log('This person sent this msg ' + msg.author);  
+        
+        const data = {
+            playerid: '4',
+            message: msg.content
+        };
+        
+        axios.post('https://samp-translate.herokuapp.com/lang-to-spanish', data)
+            .then((res) => {
+                console.log(`Status: ${res.status}`);
+                console.log('Body: ', res.data);
+            }).catch((err) => {
+                console.error(err);
+            });
     }; 
     
 
