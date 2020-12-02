@@ -81,7 +81,13 @@ client.on('ready', () => {
             .then((res) => {
                 console.log(`Status: ${res.status}`);
                 console.log('Body: ', res.data);
-                msg.channel.send('HI');
+                msg.channel.send('POST https://samp-translate.herokuapp.com/lang-to-spanish');
+                msg.channel.send('Body ');
+                msg.channel.send('{');
+                msg.channel.send('  "playerid": 4');
+                msg.channel.send('  "message": ' + msg.content);
+                msg.channel.send('}');
+
             }).catch((err) => {
                 console.error(err);
             });
