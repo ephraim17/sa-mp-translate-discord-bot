@@ -32,18 +32,12 @@ client.on('ready', () => {
             .then((res) => {
                 console.log(`Status: ${res.status}`);
                 console.log('Body: ', res.data);
+                msg.channel.send(res.data);
             }).catch((err) => {
                 console.error(err);
             });
 
-            const embed = new MessageEmbed()
-            // Set the title of the field
-            .setTitle('POST https://samp-translate.herokuapp.com/lang-to-english')
-            // Set the color of the embed
-            .setColor(0xff0000)
-            // Set the main content of the embed
-            .setDescription(res.data);
-          // Send the embed to the same channel as the message
+
           msg.channel.send(embed);
     
     };
@@ -63,19 +57,11 @@ client.on('ready', () => {
             .then((res) => {
                 console.log(`Status: ${res.status}`);
                 console.log('Body: ', res.data);
+                msg.channel.send(res.data);
             }).catch((err) => {
                 console.error(err);
             });
 
-            const embed = new MessageEmbed()
-            // Set the title of the field
-            .setTitle('POST https://samp-translate.herokuapp.com/lang-to-english')
-            // Set the color of the embed
-            .setColor(0xff0000)
-            // Set the main content of the embed
-            .setDescription(res.data);
-          // Send the embed to the same channel as the message
-          msg.channel.send(embed);
         
     };
 
@@ -94,19 +80,10 @@ client.on('ready', () => {
             .then((res) => {
                 console.log(`Status: ${res.status}`);
                 console.log('Body: ', res.data);
+                msg.channel.send(res.data);
             }).catch((err) => {
                 console.error(err);
             });
-
-            const embed = new MessageEmbed()
-            // Set the title of the field
-            .setTitle('POST https://samp-translate.herokuapp.com/lang-to-english')
-            // Set the color of the embed
-            .setColor(0xff0000)
-            // Set the main content of the embed
-            .setDescription(res.data);
-          // Send the embed to the same channel as the message
-          msg.channel.send(embed);
     }; 
     
 
