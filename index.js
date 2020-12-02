@@ -56,8 +56,9 @@ client.on('ready', () => {
         axios.post('https://samp-translate.herokuapp.com/lang-to-russian', data)
             .then((res) => {
                 console.log(`Status: ${res.status}`);
-                console.log('Body: ', res.data);
-                msg.channel.send('HI');
+                console.log('Body: ', res.data)
+
+                msg.channel.send(res.data);
             }).catch((err) => {
                 console.error(err);
             });
