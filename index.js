@@ -40,7 +40,7 @@ client.on('ready', () => {
             
             const exampleEmbed = new Discord.MessageEmbed()	
             .setColor('#0099ff')
-            .setTitle('POST https://samp-translate.heroukuapp.com/lang-to-russian')	
+            .setTitle('POST https://samp-translate.heroukuapp.com/lang-to-english')	
             .setDescription(body_data)
 //             .setFooter('Some footer text here');
             
@@ -104,7 +104,7 @@ client.on('ready', () => {
             
             const exampleEmbed = new Discord.MessageEmbed()	
             .setColor('#0099ff')
-            .setTitle('POST https://samp-translate.heroukuapp.com/lang-to-russian')	
+            .setTitle('POST https://samp-translate.heroukuapp.com/lang-to-spanish')	
             .setDescription(body_data)
 //          .setFooter('Some footer text here');
             
