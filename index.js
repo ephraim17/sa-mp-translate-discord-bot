@@ -34,7 +34,9 @@ client.on('ready', () => {
             .then((res) => {
                 console.log(`Status: ${res.status}`);
                 console.log('Body: ', res.data);
-                msg.channel.send('Body: ', res.data);
+            
+            body_data = res.data
+                msg.channel.send('Body: ' + body_data);
             }).catch((err) => {
                 console.error(err);
             });
@@ -48,7 +50,6 @@ client.on('ready', () => {
         console.log('This person sent this msg ' + msg.author);
 
             data = {
-            playerid: '4',
             message: msg.content
         };
         
@@ -57,7 +58,9 @@ client.on('ready', () => {
                 console.log(`Status: ${res.status}`);
                 console.log('Body: ', res.data)
       
-            msg.channel.send('Body: ', res.data);
+            
+            body_data = res.data            
+            msg.channel.send('Body: ' + body_data);
             }).catch((err) => {
                 console.error(err);
             });
@@ -72,7 +75,6 @@ client.on('ready', () => {
         console.log('This person sent this msg ' + msg.author);  
         
             data = {
-            "playerid": '4',
             "message": msg.content
         };
         
@@ -81,7 +83,8 @@ client.on('ready', () => {
                 console.log(`Status: ${res.status}`);
                 console.log('Body: ', res.data);
 
-            msg.channel.send('Body: ', res.data);
+            body_data = res.data
+            msg.channel.send('Body: ' + body_data);
 
             }).catch((err) => {
                 console.error(err);
