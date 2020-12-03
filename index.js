@@ -16,6 +16,9 @@ client.on('ready', () => {
   var lang_to_russian = '783245422676017173';  //Source for Russian Text
   var lang_to_english = '783148020019494962';  //Source for English Text
   var lang_to_spanish = '783143066747666472';
+  var lang_to_urdu = '784146956884115456';
+  var lang_to_chinese = '784146991893839933';
+  var lang_to_hindi = '784147019118673980';
 
 
   client.on('message', msg => {
@@ -114,6 +117,101 @@ client.on('ready', () => {
                 console.error(err);
             });
     }; 
+
+    if (msg.channel.id == lang_to_urdu && msg.author != '769186526688313405'){
+
+        console.log('Soemones trying to translate text to Urdu');
+        console.log('content ' + msg.content);
+        console.log('This person sent this msg ' + msg.author);  
+        
+//             data = {
+//             "message": msg.content
+//         };
+        
+//         axios.post('https://samp-translate.herokuapp.com/lang-to-urdu', data)
+//             .then((res) => {
+//                 console.log(`Status: ${res.status}`);
+//                 console.log('Body: ', res.data);
+
+//             body_data = JSON.stringify(res.data)
+
+            
+//             const exampleEmbed = new Discord.MessageEmbed()	
+//             .setColor('#0099ff')
+//             .setTitle('POST https://samp-translate.heroukuapp.com/lang-to-urdu')	
+//             .setDescription(body_data)
+// //          .setFooter('Some footer text here');
+            
+//                 msg.channel.send(exampleEmbed);            
+
+//             }).catch((err) => {
+//                 console.error(err);
+//             });
+    };    
+
+    if (msg.channel.id == lang_to_chinese && msg.author != '769186526688313405'){
+
+        console.log('Soemones trying to translate text to Chinese');
+        console.log('content ' + msg.content);
+        console.log('This person sent this msg ' + msg.author);  
+        
+//             data = {
+//             "message": msg.content
+//         };
+        
+//         axios.post('https://samp-translate.herokuapp.com/lang-to-chinese', data)
+//             .then((res) => {
+//                 console.log(`Status: ${res.status}`);
+//                 console.log('Body: ', res.data);
+
+//             body_data = JSON.stringify(res.data)
+
+            
+//             const exampleEmbed = new Discord.MessageEmbed()	
+//             .setColor('#0099ff')
+//             .setTitle('POST https://samp-translate.heroukuapp.com/lang-to-chinese')	
+//             .setDescription(body_data)
+// //          .setFooter('Some footer text here');
+            
+//                 msg.channel.send(exampleEmbed);            
+
+//             }).catch((err) => {
+//                 console.error(err);
+//             });
+    };
+
+    if (msg.channel.id == lang_to_hindi && msg.author != '769186526688313405'){
+
+        console.log('Soemones trying to translate text to Chinese');
+        console.log('content ' + msg.content);
+        console.log('This person sent this msg ' + msg.author);  
+        
+//             data = {
+//             "message": msg.content
+//         };
+        
+//         axios.post('https://samp-translate.herokuapp.com/lang-to-hindi', data)
+//             .then((res) => {
+//                 console.log(`Status: ${res.status}`);
+//                 console.log('Body: ', res.data);
+
+//             body_data = JSON.stringify(res.data)
+
+            
+//             const exampleEmbed = new Discord.MessageEmbed()	
+//             .setColor('#0099ff')
+//             .setTitle('POST https://samp-translate.heroukuapp.com/lang-to-hindi')	
+//             .setDescription(body_data)
+// //          .setFooter('Some footer text here');
+            
+//                 msg.channel.send(exampleEmbed);            
+
+//             }).catch((err) => {
+//                 console.error(err);
+//             });
+    };
+
+
             
 });
         
