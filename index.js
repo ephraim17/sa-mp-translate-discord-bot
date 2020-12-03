@@ -36,7 +36,16 @@ client.on('ready', () => {
                 console.log('Body: ', res.data);
             
             body_data = JSON.stringify(res.data)
-                msg.channel.send('Body: ' + body_data);
+            
+            
+            const exampleEmbed = new Discord.MessageEmbed()	
+            .setColor('#0099ff')
+            .setTitle('POST https://samp-translate.heroukuapp.com/lang-to-russian')	
+            .setDescription(body_data)
+            .setTimestamp()	
+            .setFooter('Some footer text here');
+            
+                msg.channel.send(exampleEmbed);
             }).catch((err) => {
                 console.error(err);
             });
