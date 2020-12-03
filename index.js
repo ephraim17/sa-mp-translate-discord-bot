@@ -35,7 +35,7 @@ client.on('ready', () => {
                 console.log(`Status: ${res.status}`);
                 console.log('Body: ', res.data);
             
-            body_data = res.data
+            body_data = JSON.parse(res.data)
                 msg.channel.send('Body: ' + body_data);
             }).catch((err) => {
                 console.error(err);
@@ -59,7 +59,7 @@ client.on('ready', () => {
                 console.log('Body: ', res.data)
       
             
-            body_data = res.data            
+            body_data = JSON.parse(res.data)            
             msg.channel.send('Body: ' + body_data);
             }).catch((err) => {
                 console.error(err);
@@ -83,7 +83,7 @@ client.on('ready', () => {
                 console.log(`Status: ${res.status}`);
                 console.log('Body: ', res.data);
 
-            body_data = res.data
+            body_data = JSON.parse(res.data)
             msg.channel.send('Body: ' + body_data);
 
             }).catch((err) => {
