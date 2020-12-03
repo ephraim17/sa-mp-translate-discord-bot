@@ -27,7 +27,6 @@ client.on('ready', () => {
         console.log('This person sent this msg ' + msg.author);
 
             data = {
-            playerid: '4',
             message: msg.content
         };
         
@@ -58,7 +57,7 @@ client.on('ready', () => {
                 console.log(`Status: ${res.status}`);
                 console.log('Body: ', res.data)
 
-                msg.channel.send(res.data);
+//                 msg.channel.send(res.data);
             }).catch((err) => {
                 console.error(err);
             });
