@@ -124,29 +124,29 @@ client.on('ready', () => {
         console.log('content ' + msg.content);
         console.log('This person sent this msg ' + msg.author);  
         
-//             data = {
-//             "message": msg.content
-//         };
+            data = {
+            "message": msg.content
+        };
         
-//         axios.post('https://samp-translate.herokuapp.com/lang-to-urdu', data)
-//             .then((res) => {
-//                 console.log(`Status: ${res.status}`);
-//                 console.log('Body: ', res.data);
+        axios.post('https://samp-translate.herokuapp.com/lang-to-urdu', data)
+            .then((res) => {
+                console.log(`Status: ${res.status}`);
+                console.log('Body: ', res.data);
 
-//             body_data = JSON.stringify(res.data)
+            body_data = JSON.stringify(res.data)
 
             
-//             const exampleEmbed = new Discord.MessageEmbed()	
-//             .setColor('#0099ff')
-//             .setTitle('POST https://samp-translate.heroukuapp.com/lang-to-urdu')	
-//             .setDescription(body_data)
-// //          .setFooter('Some footer text here');
+            const exampleEmbed = new Discord.MessageEmbed()	
+            .setColor('#0099ff')
+            .setTitle('POST https://samp-translate.heroukuapp.com/lang-to-urdu')	
+            .setDescription(body_data)
+//          .setFooter('Some footer text here');
             
-//                 msg.channel.send(exampleEmbed);            
+                msg.channel.send(exampleEmbed);            
 
-//             }).catch((err) => {
-//                 console.error(err);
-//             });
+            }).catch((err) => {
+                console.error(err);
+            });
     };    
 
     if (msg.channel.id == lang_to_chinese && msg.author != '769186526688313405'){
@@ -186,29 +186,29 @@ client.on('ready', () => {
         console.log('content ' + msg.content);
         console.log('This person sent this msg ' + msg.author);  
         
-//             data = {
-//             "message": msg.content
-//         };
+            data = {
+            "message": msg.content
+        };
         
-//         axios.post('https://samp-translate.herokuapp.com/lang-to-hindi', data)
-//             .then((res) => {
-//                 console.log(`Status: ${res.status}`);
-//                 console.log('Body: ', res.data);
+        axios.post('https://samp-translate.herokuapp.com/lang-to-hindi', data)
+            .then((res) => {
+                console.log(`Status: ${res.status}`);
+                console.log('Body: ', res.data);
 
-//             body_data = JSON.stringify(res.data)
+            body_data = JSON.stringify(res.data)
 
             
-//             const exampleEmbed = new Discord.MessageEmbed()	
-//             .setColor('#0099ff')
-//             .setTitle('POST https://samp-translate.heroukuapp.com/lang-to-hindi')	
-//             .setDescription(body_data)
-// //          .setFooter('Some footer text here');
+            const exampleEmbed = new Discord.MessageEmbed()	
+            .setColor('#0099ff')
+            .setTitle('POST https://samp-translate.heroukuapp.com/lang-to-hindi')	
+            .setDescription(body_data)
+//          .setFooter('Some footer text here');
             
-//                 msg.channel.send(exampleEmbed);            
+                msg.channel.send(exampleEmbed);            
 
-//             }).catch((err) => {
-//                 console.error(err);
-//             });
+            }).catch((err) => {
+                console.error(err);
+            });
     };
 
 
