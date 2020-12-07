@@ -1,6 +1,6 @@
 # 🚀 🎉 Discord Translation Bot 🚀 🎉
 
-This bot translates text from one langage to another. It uses Node, Google.Translate API, Crylic To Latin NPM package, and Discord.JS.
+This bot translates text on Discord to over 80 languages in real time. It uses Node, Google.Translate API, Crylic To Latin NPM package, and Discord.JS.
 
 
 ## Dependencies
