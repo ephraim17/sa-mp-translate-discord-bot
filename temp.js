@@ -74,16 +74,19 @@ client.on('ready', () => {
                     
             const exampleEmbed = new Discord.MessageEmbed()	
             .setColor('#0099ff')
-            .setTitle('Your translated response')	
+            // .setTitle('Your translated response')	
             .setAuthor('SA-MP Translate API', 'https://i.imgur.com/eN0S5Zc.png', 'https://sa-mp-translate.com')
-            .setDescription(body_data)
+            // .setDescription(body_data)
             .setThumbnail('https://i.imgur.com/eN0S5Zc.png')
             .setImage('https://i.imgur.com/eN0S5Zc.png')
             .addFields(
-                { name: 'Regular field title', value: 'Some value here' },
-                { name: 'Inline field title', value: 'Some value here', inline: true },
+                { name: 'Your translated response', value: body_data },
             )
-            .addField('Inline field title', 'Some value here', true)
+
+            .addFields(
+                { name: 'Your translated response', value: "body_data" },
+            )
+            
 
 //          .setFooter('Some footer text here');
             
