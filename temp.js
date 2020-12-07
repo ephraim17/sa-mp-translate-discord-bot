@@ -8,7 +8,6 @@ const axios = require('axios');
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-
 client.on('ready', () => {
     console.log(`Translater is in the builllllding!`);
   });
@@ -21,6 +20,7 @@ client.on('ready', () => {
   var lang_to_chinese = '784146991893839933';
   var lang_to_hindi = '784147019118673980';
 
+
   client.on('message', msg => {
 
     if (msg.channel.id == lang_to_english && msg.author != '769186526688313405'){
@@ -29,56 +29,18 @@ client.on('ready', () => {
         console.log('content ' + msg.content);
         console.log('This person sent this msg ' + msg.author);
 
-            
-        data = {
-            
+            data = {
             message: msg.content
-        
         };
         
         axios.post('https://samp-translate.herokuapp.com/lang-to-english', data)
             .then((res) => {
                 console.log(`Status: ${res.status}`);
-                console.log('Body: ', res.data); 
-                body_data = JSON.stringify(res.data)   
+                console.log('Body: ', res.data);
             
-                const exampleEmbed = new Discord.MessageEmbed()	  
-                .setColor('#0099ff')
-                .setTitle('POST https://samp-translate.heroukuapp.com/lang-to-english')	
-                .setDescription(body_data)
-                //             .setFooter('Some footer text here');
-                msg.channel.send(exampleEmbed);
-
-            }).catch((err) => {
-                console.error(err);
-            });
-        };
-
-        if (msg.channel.id == lang_to_russian && msg.author != '769186526688313405'){
-
-        
-            console.log('Soemones trying to translate text to Russian');
-            console.log('content ' + msg.content);
-            console.log('This person sent this msg ' + msg.author);
-            data = {
-                message: msg.content
-            };
-        
-        
-            axios.post('https://samp-translate.herokuapp.com/lang-to-russian', data)
-            .then((res) => { 
-                console.log(`Status: ${res.status}`);
-                console.log('Body: ', res.data)
-                body_data = JSON.stringify(res.data)     
-
-                // const exampleEmbed = new Discord.MessageEmbed()	
-                // .setColor('#0099ff')
-                // .setTitle('POST https://samp-translate.heroukuapp.com/lang-to-russian')	
-                // .setDescription(body_data)
-                // //          .setFooter('Some footer text here');
-
-
-
+            body_data = JSON.stringify(res.data)
+            
+            
                 const exampleEmbed = new Discord.MessageEmbed()
                 .setColor('#0099ff')
                 .setTitle('Response')
@@ -97,11 +59,42 @@ client.on('ready', () => {
             }).catch((err) => {
                 console.error(err);
             });
+    
+    };
+
+    if (msg.channel.id == lang_to_russian && msg.author != '769186526688313405'){
+
+        console.log('Soemones trying to translate text to Russian');
+        console.log('content ' + msg.content);
+        console.log('This person sent this msg ' + msg.author);
+
+            data = {
+            message: msg.content
+        };
+        
+        axios.post('https://samp-translate.herokuapp.com/lang-to-russian', data)
+            .then((res) => {
+                console.log(`Status: ${res.status}`);
+                console.log('Body: ', res.data)
+      
+            
+            body_data = JSON.stringify(res.data)     
+                    
+            const exampleEmbed = new Discord.MessageEmbed()	
+            .setColor('#0099ff')
+            .setTitle('POST https://samp-translate.heroukuapp.com/lang-to-russian')	
+            .setDescription(body_data)
+//          .setFooter('Some footer text here');
+            
+                msg.channel.send(exampleEmbed);
+            
+            }).catch((err) => {
+                console.error(err);
+            });
 
         
     };
 
-    
     if (msg.channel.id == lang_to_spanish && msg.author != '769186526688313405'){
 
         console.log('Soemones trying to translate text to Spanish');
@@ -116,12 +109,16 @@ client.on('ready', () => {
             .then((res) => {
                 console.log(`Status: ${res.status}`);
                 console.log('Body: ', res.data);
-                body_data = JSON.stringify(res.data)
-                const exampleEmbed = new Discord.MessageEmbed()	
-                .setColor('#0099ff')
-                .setTitle('POST https://samp-translate.heroukuapp.com/lang-to-spanish')	
-                .setDescription(body_data)
-                //          .setFooter('Some footer text here');
+
+            body_data = JSON.stringify(res.data)
+
+            
+            const exampleEmbed = new Discord.MessageEmbed()	
+            .setColor('#0099ff')
+            .setTitle('POST https://samp-translate.heroukuapp.com/lang-to-spanish')	
+            .setDescription(body_data)
+//          .setFooter('Some footer text here');
+            
                 msg.channel.send(exampleEmbed);            
 
             }).catch((err) => {
@@ -144,16 +141,19 @@ client.on('ready', () => {
                 console.log(`Status: ${res.status}`);
                 console.log('Body: ', res.data);
 
-                body_data = JSON.stringify(res.data)
-                const exampleEmbed = new Discord.MessageEmbed()	
-                .setColor('#0099ff')
-                .setTitle('POST https://samp-translate.heroukuapp.com/lang-to-urdu')	
-                .setDescription(body_data)
-                //          .setFooter('Some footer text here');
-                msg.channel.send(exampleEmbed);            
+            body_data = JSON.stringify(res.data)
+
             
+            const exampleEmbed = new Discord.MessageEmbed()	
+            .setColor('#0099ff')
+            .setTitle('POST https://samp-translate.heroukuapp.com/lang-to-urdu')	
+            .setDescription(body_data)
+//          .setFooter('Some footer text here');
+            
+                msg.channel.send(exampleEmbed);            
+
             }).catch((err) => {
-                console.error(err);    
+                console.error(err);
             });
     };    
 
@@ -225,4 +225,3 @@ client.on('ready', () => {
         
 client.login(process.env.BOT_TOKEN);
 app.listen(process.env.PORT , () => console.log('Server started on ' + process.env.PORT ))
-app.listen(3000 , () => console.log('Server started on ' + 3000 ))
