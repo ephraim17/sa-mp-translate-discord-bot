@@ -9,4 +9,4 @@ This bot translates text from one langage to another. It uses Node, Google.Trans
 - [x] Dotenv - npm i dotenv
 - [x] Cryillic to latin npm i cyrillic-to-latin
 
-discord.gg/a4p6kvvpdw
+[Try the bot out for yourself!](discord.gg/a4p6kvvpdw)
