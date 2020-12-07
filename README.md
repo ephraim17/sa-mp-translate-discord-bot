@@ -8,3 +8,5 @@ This bot translates text from one langage to another. It uses Node, Google.Trans
 - [x] Discord.JS - npm i discord.js
 - [x] Dotenv - npm i dotenv
 - [x] Cryillic to latin npm i cyrillic-to-latin
+
+discord.gg/a4p6kvvpdw
