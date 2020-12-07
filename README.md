@@ -6,6 +6,6 @@ This bot translates text on Discord to over 80+ languages in real time by using 
 ## Tech Stack
 - [x] NodeJS
 - [x] Express
-- [x] Shopify
+- [x] DiscordJS
 
 [Try the bot out for yourself!](discord.gg/a4p6kvvpdw)
