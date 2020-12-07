@@ -77,6 +77,8 @@ client.on('ready', () => {
             .setTitle('Your translated response')	
             .setAuthor('SA-MP Translate API', 'https://i.imgur.com/eN0S5Zc.png', 'https://sa-mp-translate.com')
             .setDescription(body_data)
+            .setTitle('Your translated response in JSON')	
+            .setDescription(body_data)
             .setThumbnail('https://i.imgur.com/eN0S5Zc.png')
             .setImage('https://i.imgur.com/eN0S5Zc.png')
 
