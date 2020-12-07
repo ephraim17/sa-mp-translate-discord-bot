@@ -41,21 +41,13 @@ client.on('ready', () => {
             body_data = JSON.stringify(res.data)
             
             
-                const exampleEmbed = new Discord.MessageEmbed()
-                .setColor('#0099ff')
-                .setTitle('Response')
-                .setURL('https://sa-mp-translate.com')
-                .setAuthor('SA-MP Translate', 'https://i.imgur.com/eN0S5Zc.png', 'https://sa-mp-translate.com')
-                .setDescription('Some description here')
-                .setThumbnail('https://i.imgur.com/eN0S5Zc.png')
-
-                    .setImage('https://i.imgur.com/eN0S5Zc.png')
-                    .setTimestamp()
-                    .setFooter('Grab an API key and try it out in your server', 'https://i.imgur.com/eN0S5Zc.png');
-
-
-                msg.channel.send(exampleEmbed);
+            const exampleEmbed = new Discord.MessageEmbed()	
+            .setColor('#0099ff')
+            .setTitle('POST https://samp-translate.heroukuapp.com/lang-to-english')	
+            .setDescription(body_data)
+//             .setFooter('Some footer text here');
             
+                msg.channel.send(exampleEmbed);
             }).catch((err) => {
                 console.error(err);
             });
@@ -82,8 +74,12 @@ client.on('ready', () => {
                     
             const exampleEmbed = new Discord.MessageEmbed()	
             .setColor('#0099ff')
-            .setTitle('POST https://samp-translate.heroukuapp.com/lang-to-russian')	
+            .setTitle('Your translated response')	
+            .setAuthor('SA-MP Translate API', 'https://i.imgur.com/eN0S5Zc.png', 'https://sa-mp-translate.com')
             .setDescription(body_data)
+            .setThumbnail('https://i.imgur.com/eN0S5Zc.png')
+            .setImage('https://i.imgur.com/eN0S5Zc.png')
+
 //          .setFooter('Some footer text here');
             
                 msg.channel.send(exampleEmbed);
@@ -225,3 +221,4 @@ client.on('ready', () => {
         
 client.login(process.env.BOT_TOKEN);
 app.listen(process.env.PORT , () => console.log('Server started on ' + process.env.PORT ))
+
