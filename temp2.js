@@ -204,32 +204,46 @@ client.on('ready', () => {
 
         console.log('Soemones trying to translate text to Chinese');
         console.log('content ' + msg.content);
-        console.log('This person sent this msg ' + msg.author);  
+        console.log('This person sent this msg ' + msg.author);
+
+            data = {
+            message: msg.content
+        };
         
-//             data = {
-//             "message": msg.content
-//         };
+        axios.post('https://samp-translate.herokuapp.com/lang-to-chinese', data)
+            .then((res) => {
+                console.log(`Status: ${res.status}`);
+                console.log('Body: ', res.data)
+                console.log('Body: ', res.data.crylicTranslatedMessage)
+      
+            
+            body_data = JSON.stringify(res.data)     
+                    
+            const exampleEmbed = new Discord.MessageEmbed()	
+            .setColor('#0099ff')
+            // .setTitle('Your translated response')	
+            .setAuthor('SA-MP Translate API', 'https://i.imgur.com/eN0S5Zc.png', 'https://sa-mp-translate.com')
+            // .setDescription(body_data)
+            .setThumbnail('https://i.imgur.com/eN0S5Zc.png')
+            .setImage('https://i.imgur.com/eN0S5Zc.png')
+            .addFields(
+                { name: 'Your translated response', value: res.data.crylicTranslatedMessage },
+            )
+            .addFields(
+                { name: 'Your translated response in JSON', value: body_data },
+            )
+            
+            .setFooter('Translations Powered by SA-MP Translate API');
+            
+                msg.channel.send(exampleEmbed);
+            
+            }).catch((err) => {
+                console.error(err);
+            });
+
         
-//         axios.post('https://samp-translate.herokuapp.com/lang-to-chinese', data)
-//             .then((res) => {
-//                 console.log(`Status: ${res.status}`);
-//                 console.log('Body: ', res.data);
-
-//             body_data = JSON.stringify(res.data)
-
-            
-//             const exampleEmbed = new Discord.MessageEmbed()	
-//             .setColor('#0099ff')
-//             .setTitle('POST https://samp-translate.heroukuapp.com/lang-to-chinese')	
-//             .setDescription(body_data)
-// //          .setFooter('Some footer text here');
-            
-//                 msg.channel.send(exampleEmbed);            
-
-//             }).catch((err) => {
-//                 console.error(err);
-//             });
     };
+
 
     if (msg.channel.id == lang_to_hindi && msg.author != '769186526688313405'){
 
@@ -275,8 +289,6 @@ client.on('ready', () => {
         
     };
 
-
-            
 });
         
 client.login(process.env.BOT_TOKEN);
