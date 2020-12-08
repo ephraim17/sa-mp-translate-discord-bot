@@ -170,7 +170,7 @@ client.on('ready', () => {
             .then((res) => {
                 console.log(`Status: ${res.status}`);
                 console.log('Body: ', res.data)
-                console.log('Body: ', res.data.latinTranslatedMessage)
+                console.log('Body: ', res.data.crylicTranslatedMessage)
       
             
             body_data = JSON.stringify(res.data)     
@@ -183,7 +183,7 @@ client.on('ready', () => {
             .setThumbnail('https://i.imgur.com/eN0S5Zc.png')
             .setImage('https://i.imgur.com/eN0S5Zc.png')
             .addFields(
-                { name: 'Your translated response', value: res.data.latinTranslatedMessage },
+                { name: 'Your translated response', value: res.data.crylicTranslatedMessage },
             )
             .addFields(
                 { name: 'Your translated response in JSON', value: body_data },
@@ -245,7 +245,7 @@ client.on('ready', () => {
             .then((res) => {
                 console.log(`Status: ${res.status}`);
                 console.log('Body: ', res.data)
-                console.log('Body: ', res.data.latinTranslatedMessage)
+                console.log('Body: ', res.data.crylicTranslatedMessage)
       
             
             body_data = JSON.stringify(res.data)     
@@ -258,7 +258,7 @@ client.on('ready', () => {
             .setThumbnail('https://i.imgur.com/eN0S5Zc.png')
             .setImage('https://i.imgur.com/eN0S5Zc.png')
             .addFields(
-                { name: 'Your translated response', value: res.data.latinTranslatedMessage },
+                { name: 'Your translated response', value: res.data.crylicTranslatedMessage },
             )
             .addFields(
                 { name: 'Your translated response in JSON', value: body_data },
