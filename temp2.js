@@ -56,7 +56,7 @@ client.on('ready', () => {
                 { name: 'Your translated response in JSON', value: body_data },
             )
             
-//          .setFooter('Some footer text here');
+         .setFooter('Translations Powered by SA-MP Translate API');
             
                 msg.channel.send(exampleEmbed);
             
@@ -100,7 +100,7 @@ client.on('ready', () => {
                 { name: 'Your translated response in JSON', value: body_data },
             )
             
-//          .setFooter('Some footer text here');
+            .setFooter('Translations Powered by SA-MP Translate API');
             
                 msg.channel.send(exampleEmbed);
             
@@ -144,7 +144,7 @@ client.on('ready', () => {
                 { name: 'Your translated response in JSON', value: body_data },
             )
             
-//          .setFooter('Some footer text here');
+            .setFooter('Translations Powered by SA-MP Translate API');
             
                 msg.channel.send(exampleEmbed);
             
@@ -189,7 +189,7 @@ client.on('ready', () => {
                 { name: 'Your translated response in JSON', value: body_data },
             )
             
-//          .setFooter('Some footer text here');
+            .setFooter('Translations Powered by SA-MP Translate API');
             
                 msg.channel.send(exampleEmbed);
             
@@ -264,7 +264,7 @@ client.on('ready', () => {
                 { name: 'Your translated response in JSON', value: body_data },
             )
             
-//          .setFooter('Some footer text here');
+            .setFooter('Translations Powered by SA-MP Translate API');
             
                 msg.channel.send(exampleEmbed);
             
