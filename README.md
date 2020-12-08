@@ -6,7 +6,7 @@
 - This bot uses the SA-MP Translate API to translate text on Discord to over 80+ languages in real time. 
 - Use this bot to get a feel of the [SA-MP Translate API](https://www.sa-mp-translate.com) and see how you can intergrate it in your server.
 
-![Image of Discord Bot in actin](https://i.imgur.com/wpPfzN9.png)
+![Image of Discord Bot in actin](https://imgur.com/XGbfs8j.png)
 
 ## Tech Stack
 - [x] NodeJS
