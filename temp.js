@@ -82,12 +82,10 @@ client.on('ready', () => {
             .addFields(
                 { name: 'Your translated response', value: body_data },
             )
-
             .addFields(
-                { name: 'Your translated response', value: "body_data" },
+                { name: 'Your translated response in JSON', value: body_data },
             )
             
-
 //          .setFooter('Some footer text here');
             
                 msg.channel.send(exampleEmbed);
