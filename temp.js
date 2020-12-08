@@ -68,6 +68,7 @@ client.on('ready', () => {
             .then((res) => {
                 console.log(`Status: ${res.status}`);
                 console.log('Body: ', res.data)
+                console.log('Body: ', res.data.message)
       
             
             body_data = JSON.stringify(res.data)     
