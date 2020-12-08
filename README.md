@@ -12,7 +12,7 @@
 
 ![Image of Discord Bot in action](https://imgur.com/XGbfs8j.png)
 
-[Join the SA-MP Translate Discord server to see the bot in action](discord.gg/a4p6kvvpdw)
+[Join the SA-MP Translate Discord server to see the bot in action](https://discord.gg/dBt4zjqT)
 
 ## Tech Stack
 - [x] NodeJS
