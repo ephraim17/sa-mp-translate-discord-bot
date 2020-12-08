@@ -18,4 +18,4 @@
 - [x] Express
 - [x] DiscordJS
 
-[Click here to join the SA-MP Translate Discord server and have your text translated to other language by this bot](discord.gg/a4p6kvvpdw)
+[Join the SA-MP Translate Discord server to see the bot in action](discord.gg/a4p6kvvpdw)
