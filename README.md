@@ -11,6 +11,9 @@
 - Use the SA-MP Translate Discord bot to get a feel of the [SA-MP Translate API](https://www.sa-mp-translate.com).
 
 ![Image of Discord Bot in action](https://imgur.com/XGbfs8j.png)
+![Image of Discord Bot in action](https://www.sa-mp.com/images/logo.gif)
+
+
 
 [Join the SA-MP Translate Discord server to see the bot in action](https://discord.gg/dBt4zjqT)
 
