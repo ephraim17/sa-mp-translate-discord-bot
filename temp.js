@@ -81,7 +81,7 @@ client.on('ready', () => {
             .setThumbnail('https://i.imgur.com/eN0S5Zc.png')
             .setImage('https://i.imgur.com/eN0S5Zc.png')
             .addFields(
-                { name: 'Your translated response', value: body_data },
+                { name: 'Your translated response', value: res.data.latinTranslatedMessage },
             )
             .addFields(
                 { name: 'Your translated response in JSON', value: body_data },
