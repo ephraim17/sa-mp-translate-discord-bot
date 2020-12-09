@@ -8,6 +8,10 @@ const axios = require('axios');
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+app.get('/', function (req, res) {
+  res.redirect('https://discord.gg/bKbu7bKaHV')
+})
+
 client.on('ready', () => {
     console.log(`Translater is in the builllllding!`);
   });
