@@ -48,7 +48,7 @@ client.on('ready', () => {
             .setAuthor('SA-MP Translate API', 'https://i.imgur.com/eN0S5Zc.png', 'https://sa-mp-translate.com')
             // .setDescription(body_data)
             .setThumbnail('https://i.imgur.com/eN0S5Zc.png')
-            .setImage('https://i.imgur.com/eN0S5Zc.png')
+            .setImage('https://i.imgur.com/k3Ktigs.png')
             .addFields(
                 { name: 'Your translated response', value: res.data.latinTranslatedMessage },
             )
@@ -92,7 +92,7 @@ client.on('ready', () => {
             .setAuthor('SA-MP Translate API', 'https://i.imgur.com/eN0S5Zc.png', 'https://sa-mp-translate.com')
             // .setDescription(body_data)
             .setThumbnail('https://i.imgur.com/eN0S5Zc.png')
-            .setImage('https://i.imgur.com/eN0S5Zc.png')
+            .setImage('https://i.imgur.com/k3Ktigs.png')
             .addFields(
                 { name: 'Your translated response', value: res.data.latinTranslatedMessage },
             )
@@ -136,7 +136,7 @@ client.on('ready', () => {
             .setAuthor('SA-MP Translate API', 'https://i.imgur.com/eN0S5Zc.png', 'https://sa-mp-translate.com')
             // .setDescription(body_data)
             .setThumbnail('https://i.imgur.com/eN0S5Zc.png')
-            .setImage('https://i.imgur.com/eN0S5Zc.png')
+            .setImage('https://i.imgur.com/k3Ktigs.png')
             .addFields(
                 { name: 'Your translated response', value: res.data.latinTranslatedMessage },
             )
@@ -181,7 +181,7 @@ client.on('ready', () => {
             .setAuthor('SA-MP Translate API', 'https://i.imgur.com/eN0S5Zc.png', 'https://sa-mp-translate.com')
             // .setDescription(body_data)
             .setThumbnail('https://i.imgur.com/eN0S5Zc.png')
-            .setImage('https://i.imgur.com/eN0S5Zc.png')
+            .setImage('https://i.imgur.com/k3Ktigs.png')
             .addFields(
                 { name: 'Your translated response', value: res.data.crylicTranslatedMessage },
             )
@@ -225,7 +225,7 @@ client.on('ready', () => {
             .setAuthor('SA-MP Translate API', 'https://i.imgur.com/eN0S5Zc.png', 'https://sa-mp-translate.com')
             // .setDescription(body_data)
             .setThumbnail('https://i.imgur.com/eN0S5Zc.png')
-            .setImage('https://i.imgur.com/eN0S5Zc.png')
+            .setImage('https://i.imgur.com/k3Ktigs.png')
             .addFields(
                 { name: 'Your translated response', value: res.data.crylicTranslatedMessage },
             )
@@ -270,7 +270,7 @@ client.on('ready', () => {
             .setAuthor('SA-MP Translate API', 'https://i.imgur.com/eN0S5Zc.png', 'https://sa-mp-translate.com')
             // .setDescription(body_data)
             .setThumbnail('https://i.imgur.com/eN0S5Zc.png')
-            .setImage('https://i.imgur.com/eN0S5Zc.png')
+            .setImage('https://i.imgur.com/k3Ktigs.png')
             .addFields(
                 { name: 'Your translated response', value: res.data.crylicTranslatedMessage },
             )
