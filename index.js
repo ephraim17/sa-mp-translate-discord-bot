@@ -37,7 +37,7 @@ client.on('ready', () => {
             message: msg.content
         };
         
-        axios.post('https://samp-translate.herokuapp.com/lang-to-english', data)
+        axios.post('https://samp-translate.herokuapp.com/ru-to-en', data)
             .then((res) => {
                 console.log(`Status: ${res.status}`);
                 console.log('Body: ', res.data);
@@ -47,7 +47,7 @@ client.on('ready', () => {
             
             const exampleEmbed = new Discord.MessageEmbed()	
             .setColor('#0099ff')
-            .setTitle('POST https://samp-translate.heroukuapp.com/lang-to-english')	
+            .setTitle('POST https://cloud.sa-mp-translate.com/ru-to-en')	
             .setDescription(body_data)
 //             .setFooter('Some footer text here');
             
@@ -68,7 +68,7 @@ client.on('ready', () => {
             message: msg.content
         };
         
-        axios.post('https://samp-translate.herokuapp.com/lang-to-russian', data)
+        axios.post('https://cloud.sa-mp-translate.com/en-to-ru', data)
             .then((res) => {
                 console.log(`Status: ${res.status}`);
                 console.log('Body: ', res.data)
@@ -78,7 +78,7 @@ client.on('ready', () => {
                     
             const exampleEmbed = new Discord.MessageEmbed()	
             .setColor('#0099ff')
-            .setTitle('POST https://samp-translate.heroukuapp.com/lang-to-russian')	
+            .setTitle('POST https://samp-translate.heroukuapp.com/en-to-ru')	
             .setDescription(body_data)
 //          .setFooter('Some footer text here');
             
