@@ -33,7 +33,7 @@ client.on('ready', () => {
             message: msg.content
         };
         
-        axios.post('https://samp-translate.herokuapp.com/lang-to-english', data)
+        axios.post('https://samp-translate.herokuapp.com/ru-to-en', data)
             .then((res) => {
                 console.log(`Status: ${res.status}`);
                 console.log('Body: ', res.data)
@@ -48,7 +48,7 @@ client.on('ready', () => {
             .setAuthor('SA-MP Translate API', 'https://i.imgur.com/eN0S5Zc.png', 'https://sa-mp-translate.com')
             // .setDescription(body_data)
             .setThumbnail('https://i.imgur.com/eN0S5Zc.png')
-            .setImage('https://i.imgur.com/k3Ktigs.png')
+//             .setImage('https://i.imgur.com/k3Ktigs.png')
             .addFields(
                 { name: 'Your translated response', value: res.data.latinTranslatedMessage },
             )
@@ -77,7 +77,7 @@ client.on('ready', () => {
             message: msg.content
         };
         
-        axios.post('https://samp-translate.herokuapp.com/lang-to-russian', data)
+        axios.post('https://samp-translate.herokuapp.com/en-to-ru', data)
             .then((res) => {
                 console.log(`Status: ${res.status}`);
                 console.log('Body: ', res.data)
@@ -92,7 +92,7 @@ client.on('ready', () => {
             .setAuthor('SA-MP Translate API', 'https://i.imgur.com/eN0S5Zc.png', 'https://sa-mp-translate.com')
             // .setDescription(body_data)
             .setThumbnail('https://i.imgur.com/eN0S5Zc.png')
-            .setImage('https://i.imgur.com/k3Ktigs.png')
+//             .setImage('https://i.imgur.com/k3Ktigs.png')
             .addFields(
                 { name: 'Your translated response', value: res.data.latinTranslatedMessage },
             )
@@ -100,7 +100,7 @@ client.on('ready', () => {
                 { name: 'Your translated response in JSON', value: body_data },
             )
             
-            .setFooter('Translations Powered by SA-MP Translate API');
+//             .setFooter('Translations Powered by SA-MP Translate API');
             
                 msg.channel.send(exampleEmbed);
             
