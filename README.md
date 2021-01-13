@@ -9,12 +9,12 @@
 - We believe that by breaking the language barrier in SA-MP we can create a better experience for all the players.
 
  
-- Use the SA-MP Translate Discord bot to get a feel of the [SA-MP Translate API](https://www.sa-mp-translate.com).
+- Use the SA-MP Translate Discord bot to get a feel of the [SA-MP Translate API](https://discord.gg/X8xNKdnjyB).
 
 ![Image of Discord Bot in action](https://imgur.com/XGbfs8j.png)
 
 
-[Join the SA-MP Translate Discord server to see the bot in action](https://discord.gg/dBt4zjqT)
+[Join the SA-MP Translate Discord server to see the bot in action](https://discord.gg/X8xNKdnjyB)
 
 ## Tech Stack
 - [x] NodeJS
