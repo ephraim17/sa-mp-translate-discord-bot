@@ -13,13 +13,5 @@
 
 ![Image of SA-MP-translate.com landing page](https://imgur.com/HF34z6x.png)
 ![Image of Discord Bot in action](https://imgur.com/XGbfs8j.png)
-
-
-[Join the SA-MP Translate Discord server to see the bot in action](https://discord.gg/X8xNKdnjyB)
-
-## Tech Stack
-- [x] NodeJS
-- [x] Express
-- [x] DiscordJS
-
-
+![Image of SA-MP-translate.com Instagram page](https://i.imgur.com/HtUBO10.png)
+[Click the link to visit the Instagram Page!](https://www.instagram.com/samp_translate/ "samp-translate.com's Instagram Page")
